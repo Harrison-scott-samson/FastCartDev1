@@ -1,0 +1,71 @@
+.shop-container {
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shop-header h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+.search-input {
+  max-width: 300px;
+}
+
+.category-chips {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: var(--paper);
+  border: 1px solid #E0E0E0;
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.chip:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.chip-active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.chip-active:hover {
+  color: white;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.loader, .empty-state {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}

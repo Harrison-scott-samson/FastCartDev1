@@ -1,0 +1,125 @@
+.success-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+.success-card {
+  background: var(--paper);
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.success-card h2 {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.success-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.token-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--bg-color);
+  border: 2px dashed #E0E0E0;
+  border-radius: var(--radius-md);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.token-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.divider {
+  width: 2px;
+  height: 60px;
+  background: #E0E0E0;
+}
+
+.token-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.token-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.otp-text {
+  color: var(--secondary);
+  letter-spacing: 4px;
+}
+
+.instructions {
+  text-align: left;
+  background: rgba(255,193,7,0.1);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  margin-bottom: 40px;
+}
+
+.instructions h3 {
+  color: #B28704;
+  margin-bottom: 16px;
+}
+
+.instructions ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.instructions li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-dark);
+}
+
+.instructions li::before {
+  content: '✓';
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.success-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .token-board {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .divider {
+    width: 60px;
+    height: 2px;
+  }
+}

@@ -1,0 +1,117 @@
+.history-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 5%;
+}
+
+.history-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: var(--paper);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  transition: var(--transition);
+  border: 1px solid #E0E0E0;
+}
+
+.order-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(255,107,0,0.3);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-id {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.badge-pending { background: #FFF3E0; color: #E65100; }
+.badge-preparing { background: #E3F2FD; color: #1565C0; }
+.badge-ready { background: #E8F5E9; color: #2E7D32; }
+.badge-completed { background: #F5F5F5; color: #616161; }
+
+.status-pending { color: #E65100; }
+.status-preparing { color: #1565C0; }
+.status-ready { color: #2E7D32; }
+.status-completed { color: #616161; }
+
+.order-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-muted);
+}
+
+.order-info strong {
+  color: var(--text-dark);
+}
+
+.order-tokens {
+  display: flex;
+  gap: 24px;
+  background: var(--bg-color);
+  padding: 16px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed #ccc;
+}
+
+.token-display {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.token-display .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.token-display .value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.token-display .otp {
+  color: var(--secondary);
+  letter-spacing: 2px;
+}

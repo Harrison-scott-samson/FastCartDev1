@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -1px;
+}
+
+.accent {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.cart-link {
+  position: relative;
+  color: var(--text-dark);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.cart-link:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: var(--secondary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 2px solid var(--paper);
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn:hover {
+  color: var(--secondary);
+}
